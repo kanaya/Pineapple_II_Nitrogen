@@ -8436,74 +8436,47 @@ Composed by Ichi Kanya. Pineapple.cc.
 &lt;author&gt;Created by yuhki50@gmail.com&lt;/author&gt;
 &lt;/p&gt;</description>
 <packages>
-<package name="B4B-PH-K-S">
-<wire x1="-4.95" y1="1.7" x2="-4.95" y2="1.175" width="0.1524" layer="21"/>
-<wire x1="-4.95" y1="1.175" x2="-4.95" y2="0.25" width="0.1524" layer="21"/>
-<wire x1="-4.95" y1="0.25" x2="-4.95" y2="-2.8" width="0.1524" layer="21"/>
-<wire x1="-4.95" y1="1.7" x2="-2.5" y2="1.7" width="0.1524" layer="21"/>
-<wire x1="-2.5" y1="1.7" x2="2.5" y2="1.7" width="0.1524" layer="21"/>
-<wire x1="2.5" y1="1.7" x2="4.95" y2="1.7" width="0.1524" layer="21"/>
-<wire x1="4.95" y1="-2.8" x2="-4.95" y2="-2.8" width="0.1524" layer="21"/>
-<pad name="1" x="-3" y="0" drill="0.8" shape="square" rot="R90"/>
-<pad name="2" x="-1" y="0" drill="0.8" rot="R90"/>
-<text x="-5" y="2.5" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="4.95" y1="1.7" x2="4.95" y2="1.175" width="0.1524" layer="21"/>
-<wire x1="4.95" y1="1.175" x2="4.95" y2="0.25" width="0.1524" layer="21"/>
-<wire x1="4.95" y1="0.25" x2="4.95" y2="-2.8" width="0.1524" layer="21"/>
-<wire x1="-4.95" y1="0.25" x2="-4.425" y2="0.25" width="0.1524" layer="21"/>
-<wire x1="-4.425" y1="0.25" x2="-4.425" y2="-2.275" width="0.1524" layer="21"/>
-<wire x1="-4.425" y1="-2.275" x2="4.425" y2="-2.275" width="0.1524" layer="21"/>
-<wire x1="4.425" y1="-2.275" x2="4.425" y2="0.25" width="0.1524" layer="21"/>
-<wire x1="4.425" y1="0.25" x2="4.95" y2="0.25" width="0.1524" layer="21"/>
-<wire x1="-4.95" y1="1.175" x2="-2.5" y2="1.175" width="0.1524" layer="21"/>
-<wire x1="-2.5" y1="1.175" x2="-2.5" y2="1.7" width="0.1524" layer="21"/>
-<wire x1="2.5" y1="1.7" x2="2.5" y2="1.175" width="0.1524" layer="21"/>
-<wire x1="2.5" y1="1.175" x2="4.95" y2="1.175" width="0.1524" layer="21"/>
-<pad name="3" x="1" y="0" drill="0.8" rot="R90"/>
-<pad name="4" x="3" y="0" drill="0.8" rot="R90"/>
+<package name="S4B-PH-K-S">
+<wire x1="-4.95" y1="6.25" x2="-4.95" y2="-2.3" width="0.1524" layer="21"/>
+<wire x1="-4.95" y1="6.25" x2="4.95" y2="6.25" width="0.1524" layer="21"/>
+<text x="-5" y="7" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5" y="-4" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="4.95" y1="6.25" x2="4.95" y2="-2.3" width="0.1524" layer="21"/>
+<wire x1="-4.95" y1="-2.3" x2="-4.15" y2="-2.3" width="0.1524" layer="21"/>
+<wire x1="-4.15" y1="-2.3" x2="-4.15" y2="1" width="0.1524" layer="21"/>
+<wire x1="-4.15" y1="1" x2="4.15" y2="1" width="0.1524" layer="21"/>
+<wire x1="4.15" y1="1" x2="4.15" y2="-2.3" width="0.1524" layer="21"/>
+<wire x1="4.15" y1="-2.3" x2="4.95" y2="-2.3" width="0.1524" layer="21"/>
+<pad name="1" x="3" y="0" drill="0.8" shape="square" rot="R90"/>
+<pad name="2" x="1" y="0" drill="0.8" rot="R90"/>
+<pad name="3" x="-1" y="0" drill="0.8" rot="R90"/>
+<pad name="4" x="-3" y="0" drill="0.8" rot="R90"/>
 </package>
-<package name="B4B-PH-SM4-TB">
-<wire x1="-5.95" y1="1.7" x2="-5.95" y2="1.175" width="0.1524" layer="51"/>
-<wire x1="-5.95" y1="1.175" x2="-5.95" y2="0.25" width="0.1524" layer="51"/>
-<wire x1="-5.95" y1="0.25" x2="-5.95" y2="-2.8" width="0.1524" layer="51"/>
-<wire x1="-5.95" y1="1.7" x2="-2.5" y2="1.7" width="0.1524" layer="51"/>
-<wire x1="-2.5" y1="1.7" x2="2.5" y2="1.7" width="0.1524" layer="51"/>
-<wire x1="2.5" y1="1.7" x2="5.95" y2="1.7" width="0.1524" layer="51"/>
-<wire x1="5.95" y1="-2.8" x2="-5.95" y2="-2.8" width="0.1524" layer="51"/>
-<text x="-6" y="2.5" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-6" y="-7.5" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="5.95" y1="1.7" x2="5.95" y2="1.175" width="0.1524" layer="51"/>
-<wire x1="5.95" y1="1.175" x2="5.95" y2="0.25" width="0.1524" layer="51"/>
-<wire x1="5.95" y1="0.25" x2="5.95" y2="-2.8" width="0.1524" layer="51"/>
-<wire x1="-5.95" y1="0.25" x2="-4.425" y2="0.25" width="0.1524" layer="51"/>
-<wire x1="-4.425" y1="0.25" x2="-4.425" y2="-2.275" width="0.1524" layer="51"/>
-<wire x1="-4.425" y1="-2.275" x2="4.425" y2="-2.275" width="0.1524" layer="51"/>
-<wire x1="4.425" y1="-2.275" x2="4.425" y2="0.25" width="0.1524" layer="51"/>
-<wire x1="4.425" y1="0.25" x2="5.95" y2="0.25" width="0.1524" layer="51"/>
-<wire x1="-5.95" y1="1.175" x2="-2.5" y2="1.175" width="0.1524" layer="51"/>
-<wire x1="-2.5" y1="1.175" x2="-2.5" y2="1.7" width="0.1524" layer="51"/>
-<wire x1="2.5" y1="1.7" x2="2.5" y2="1.175" width="0.1524" layer="51"/>
-<wire x1="2.5" y1="1.175" x2="5.95" y2="1.175" width="0.1524" layer="51"/>
-<smd name="S1" x="-5" y="-0.8" dx="3" dy="1.6" layer="1" rot="R90"/>
-<smd name="S2" x="5" y="-0.8" dx="3" dy="1.6" layer="1" rot="R90"/>
-<smd name="1" x="-3" y="-3.05" dx="5.5" dy="1" layer="1" rot="R90"/>
-<smd name="2" x="-1" y="-3.05" dx="5.5" dy="1" layer="1" rot="R90"/>
-<wire x1="-5.95" y1="1.7" x2="-5.95" y2="1.175" width="0.1524" layer="21"/>
-<wire x1="-5.95" y1="1.7" x2="-2.5" y2="1.7" width="0.1524" layer="21"/>
-<wire x1="-2.5" y1="1.7" x2="2.5" y2="1.7" width="0.1524" layer="21"/>
-<wire x1="2.5" y1="1.7" x2="5.95" y2="1.7" width="0.1524" layer="21"/>
-<wire x1="5.95" y1="1.7" x2="5.95" y2="1.175" width="0.1524" layer="21"/>
-<wire x1="-5.95" y1="1.175" x2="-2.5" y2="1.175" width="0.1524" layer="21"/>
-<wire x1="-2.5" y1="1.175" x2="-2.5" y2="1.7" width="0.1524" layer="21"/>
-<wire x1="2.5" y1="1.7" x2="2.5" y2="1.175" width="0.1524" layer="21"/>
-<wire x1="2.5" y1="1.175" x2="5.95" y2="1.175" width="0.1524" layer="21"/>
-<wire x1="5.95" y1="-2.8" x2="3.8" y2="-2.8" width="0.1524" layer="21"/>
-<wire x1="-3.8" y1="-2.8" x2="-5.95" y2="-2.8" width="0.1524" layer="21"/>
-<wire x1="-5.95" y1="1.175" x2="-5.95" y2="-2.8" width="0.1524" layer="21"/>
-<wire x1="5.95" y1="1.175" x2="5.95" y2="-2.8" width="0.1524" layer="21"/>
-<smd name="3" x="1" y="-3.05" dx="5.5" dy="1" layer="1" rot="R90"/>
-<smd name="4" x="3" y="-3.05" dx="5.5" dy="1" layer="1" rot="R90"/>
+<package name="S4B-PH-SM4-TB">
+<wire x1="-5.95" y1="6.25" x2="-5.95" y2="-2.3" width="0.1524" layer="51"/>
+<wire x1="-5.95" y1="6.25" x2="5.95" y2="6.25" width="0.1524" layer="51"/>
+<text x="-6" y="7" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-6" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="5.95" y1="6.25" x2="5.95" y2="-2.3" width="0.1524" layer="51"/>
+<wire x1="-5.95" y1="-2.3" x2="-5.15" y2="-2.3" width="0.1524" layer="51"/>
+<wire x1="-5.15" y1="-2.3" x2="-5.15" y2="1" width="0.1524" layer="51"/>
+<wire x1="-5.15" y1="1" x2="5.15" y2="1" width="0.1524" layer="51"/>
+<wire x1="5.15" y1="1" x2="5.15" y2="-2.3" width="0.1524" layer="51"/>
+<wire x1="5.15" y1="-2.3" x2="5.95" y2="-2.3" width="0.1524" layer="51"/>
+<smd name="S1" x="-5.35" y="4.7" dx="3.4" dy="1.5" layer="1" rot="R90"/>
+<smd name="S2" x="5.35" y="4.7" dx="3.4" dy="1.5" layer="1" rot="R90"/>
+<smd name="1" x="3" y="-1" dx="3.5" dy="1" layer="1" rot="R90"/>
+<smd name="2" x="1" y="-1" dx="3.5" dy="1" layer="1" rot="R90"/>
+<wire x1="-4.2" y1="6.25" x2="4.2" y2="6.25" width="0.1524" layer="21"/>
+<wire x1="-5.95" y1="-2.3" x2="-5.15" y2="-2.3" width="0.1524" layer="21"/>
+<wire x1="-5.15" y1="-2.3" x2="-5.15" y2="1" width="0.1524" layer="21"/>
+<wire x1="-5.15" y1="1" x2="5.15" y2="1" width="0.1524" layer="21"/>
+<wire x1="5.15" y1="1" x2="5.15" y2="-2.3" width="0.1524" layer="21"/>
+<wire x1="5.15" y1="-2.3" x2="5.95" y2="-2.3" width="0.1524" layer="21"/>
+<wire x1="5.95" y1="2.6" x2="5.95" y2="-2.3" width="0.1524" layer="21"/>
+<wire x1="-5.95" y1="2.6" x2="-5.95" y2="-2.3" width="0.1524" layer="21"/>
+<smd name="3" x="-1" y="-1" dx="3.5" dy="1" layer="1" rot="R90"/>
+<smd name="4" x="-3" y="-1" dx="3.5" dy="1" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -8521,8 +8494,8 @@ Composed by Ichi Kanya. Pineapple.cc.
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="B4B-PH-*" prefix="CN" uservalue="yes">
-<description>&lt;b&gt;Wire-to-Board 2.0mm pitch top mount connector&lt;/b&gt;
+<deviceset name="S4B-PH-*" prefix="CN" uservalue="yes">
+<description>&lt;b&gt;Wire-to-Board 2.0mm pitch side mount connector&lt;/b&gt;
 &lt;p&gt;
 Source:
 &lt;ul&gt;
@@ -8534,7 +8507,7 @@ Source:
 <gate name="G$1" symbol="CON-1X4" x="0" y="0"/>
 </gates>
 <devices>
-<device name="K-S" package="B4B-PH-K-S">
+<device name="K-S" package="S4B-PH-K-S">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -8545,7 +8518,7 @@ Source:
 <technology name=""/>
 </technologies>
 </device>
-<device name="SM4-TB" package="B4B-PH-SM4-TB">
+<device name="SM4-TB" package="S4B-PH-SM4-TB">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -8638,7 +8611,7 @@ Source:
 <part name="JP4" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="SUPPLY21" library="supply2" deviceset="VCC" device=""/>
 <part name="K1" library="relay" deviceset="G5V1" device=""/>
-<part name="CN1" library="jst-ph" deviceset="B4B-PH-*" device="K-S"/>
+<part name="CN1" library="jst-ph" deviceset="S4B-PH-*" device="K-S"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="0204/5" value="330"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="0204/5" value="330"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
