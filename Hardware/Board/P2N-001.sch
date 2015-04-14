@@ -8946,13 +8946,20 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 Copyright 2015 by Pineapple.cc</text>
 <text x="12.7" y="86.36" size="1.778" layer="91">1, 3: Vdd; 2, 4: GND
 5: RST; 6: GND
-7: LED; 7: R+GND</text>
+7: LEDA; 8: LEDK</text>
 <text x="10.16" y="152.4" size="1.778" layer="91" rot="R90">GeekPort II</text>
 <text x="132.08" y="167.64" size="1.778" layer="91">USB Bridge</text>
 <text x="48.26" y="88.9" size="1.778" layer="91">1: TXA; 2: TXK
 3: RXA; 4: RXK</text>
-<text x="314.96" y="88.9" size="1.778" layer="91">1: TX+; 2: TX-
+<text x="284.48" y="81.28" size="1.778" layer="91">1: TX+; 2: TX-
 3: RX+; 4: RX-</text>
+<text x="116.84" y="35.56" size="1.778" layer="91">1: Sensor X; 2: Sensor Y
+3: GPIO; 4: MISO
+5: MOSI; 6: SCLCK</text>
+<text x="284.48" y="134.62" size="1.778" layer="91">1: Vcc; 2: GND
+3: Raw TX; 4: MIDI OUT Send; 5: MIDI OUT Return
+6: Contact A; 7: GND; 8: Contact B
+9: MIDI IN Anode; 10: MIDI IN Kathode</text>
 </plain>
 <instances>
 <instance part="R9" gate="G$1" x="248.92" y="60.96"/>
