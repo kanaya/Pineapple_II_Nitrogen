@@ -3745,7 +3745,7 @@ design rules under a new name.</description>
 <wire x1="39.3192" y1="57.15" x2="39.37" y2="57.15" width="0.254" layer="1"/>
 <via x="27.6606" y="56.4642" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="MIDI1">
+<signal name="TX+">
 <contactref element="IC4" pad="6"/>
 <contactref element="R10" pad="2"/>
 <contactref element="CN1" pad="1"/>
@@ -3816,7 +3816,7 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="8.9154" x2="34.29" y2="8.89" width="0.254" layer="1"/>
 <wire x1="36.8046" y1="21.4884" x2="36.83" y2="21.59" width="0.254" layer="1"/>
 </signal>
-<signal name="N$1">
+<signal name="RAWTX">
 <contactref element="IC3" pad="4"/>
 <contactref element="SV1" pad="3"/>
 <wire x1="12.8016" y1="53.4924" x2="16.4592" y2="57.15" width="0.254" layer="1"/>
@@ -3844,7 +3844,7 @@ design rules under a new name.</description>
 <signal name="VEE">
 <contactref element="IC1" pad="7"/>
 </signal>
-<signal name="GEEK16">
+<signal name="SEL">
 <contactref element="IC1" pad="11"/>
 <contactref element="IC1" pad="10"/>
 <contactref element="MC1" pad="P$6"/>
@@ -3874,7 +3874,7 @@ design rules under a new name.</description>
 <via x="2.9718" y="30.6324" extent="1-16" drill="0.6096"/>
 <via x="19.6596" y="47.7774" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="MIDI6">
+<signal name="TX">
 <contactref element="IC3" pad="1"/>
 <contactref element="IC3" pad="3"/>
 <contactref element="IC4" pad="4"/>
@@ -3917,7 +3917,7 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="31.5468" x2="34.29" y2="31.75" width="0.254" layer="16"/>
 <wire x1="14.1732" y1="24.2316" x2="13.97" y2="24.13" width="0.254" layer="16"/>
 </signal>
-<signal name="MIDI15">
+<signal name="RXK">
 <contactref element="OK1" pad="3"/>
 <contactref element="D2" pad="A"/>
 <contactref element="SV1" pad="10"/>
@@ -3940,7 +3940,7 @@ design rules under a new name.</description>
 <via x="32.6898" y="26.7462" extent="1-16" drill="0.6096"/>
 <via x="29.0322" y="26.7462" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="MIDI11">
+<signal name="RX+">
 <contactref element="IC2" pad="6"/>
 <contactref element="R6" pad="2"/>
 <contactref element="CN1" pad="3"/>
@@ -3970,7 +3970,7 @@ design rules under a new name.</description>
 <via x="49.3776" y="33.8328" extent="1-16" drill="0.6096"/>
 <via x="32.2326" y="28.575" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="MIDI13">
+<signal name="RX-">
 <contactref element="IC2" pad="7"/>
 <contactref element="R6" pad="1"/>
 <contactref element="CN1" pad="4"/>
@@ -3998,7 +3998,7 @@ design rules under a new name.</description>
 <via x="44.3484" y="15.0876" extent="1-16" drill="0.6096"/>
 <via x="26.7462" y="26.289" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="MIDI3">
+<signal name="TX-">
 <contactref element="IC4" pad="7"/>
 <contactref element="R10" pad="1"/>
 <contactref element="CN1" pad="2"/>
@@ -4017,7 +4017,7 @@ design rules under a new name.</description>
 <wire x1="31.7754" y1="64.6938" x2="31.75" y2="64.77" width="0.254" layer="1"/>
 <wire x1="39.3192" y1="59.8932" x2="39.37" y2="59.69" width="0.254" layer="1"/>
 </signal>
-<signal name="N$3">
+<signal name="RST">
 <contactref element="JP1" pad="5"/>
 <contactref element="MC1" pad="P$13"/>
 <wire x1="43.434" y1="29.2608" x2="44.3484" y2="29.2608" width="0.254" layer="16"/>
@@ -4029,7 +4029,7 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="36.8046" x2="34.29" y2="36.83" width="0.254" layer="1"/>
 <via x="40.2336" y="30.4038" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$4">
+<signal name="LED">
 <contactref element="JP1" pad="7"/>
 <contactref element="MC1" pad="P$34"/>
 <wire x1="44.577" y1="34.9758" x2="44.577" y2="31.7754" width="0.254" layer="1"/>
@@ -4196,7 +4196,7 @@ design rules under a new name.</description>
 <via x="17.6022" y="27.2034" extent="1-16" drill="0.6096"/>
 <via x="20.574" y="33.3756" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$10">
+<signal name="RETURN">
 <contactref element="R9" pad="2"/>
 <contactref element="SV1" pad="5"/>
 <wire x1="43.434" y1="57.15" x2="44.45" y2="57.15" width="0.254" layer="16"/>
@@ -4219,7 +4219,7 @@ design rules under a new name.</description>
 <via x="9.8298" y="60.8076" extent="1-16" drill="0.6096"/>
 <via x="2.0574" y="39.7764" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$12">
+<signal name="SEND">
 <contactref element="R8" pad="2"/>
 <contactref element="SV1" pad="4"/>
 <wire x1="10.287" y1="16.6878" x2="13.9446" y2="16.6878" width="0.254" layer="1"/>
@@ -4231,7 +4231,7 @@ design rules under a new name.</description>
 <wire x1="13.9446" y1="16.6878" x2="13.97" y2="16.51" width="0.254" layer="1"/>
 <wire x1="3.8862" y1="17.6022" x2="3.81" y2="17.78" width="0.254" layer="1"/>
 </signal>
-<signal name="N$14">
+<signal name="CB">
 <contactref element="K1" pad="10"/>
 <contactref element="SV1" pad="8"/>
 <wire x1="44.3484" y1="18.5166" x2="44.3484" y2="18.9738" width="0.254" layer="1"/>
@@ -4251,7 +4251,7 @@ design rules under a new name.</description>
 <wire x1="3.6576" y1="22.86" x2="3.81" y2="22.86" width="0.254" layer="16"/>
 <via x="38.862" y="6.858" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$16">
+<signal name="CA">
 <contactref element="K1" pad="5"/>
 <contactref element="SV1" pad="6"/>
 <wire x1="41.6052" y1="8.9154" x2="39.5478" y2="8.9154" width="0.254" layer="1"/>
@@ -4275,7 +4275,7 @@ design rules under a new name.</description>
 <via x="46.6344" y="8.9154" extent="1-16" drill="0.6096"/>
 <via x="5.0292" y="13.716" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$20">
+<signal name="GPIO0">
 <contactref element="MC1" pad="P$8"/>
 <contactref element="JP2" pad="1"/>
 <contactref element="JP5" pad="1"/>
@@ -4316,7 +4316,7 @@ design rules under a new name.</description>
 <via x="68.3514" y="40.005" extent="1-16" drill="0.6096"/>
 <via x="69.2658" y="34.7472" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$21">
+<signal name="GPIO1">
 <contactref element="MC1" pad="P$2"/>
 <contactref element="JP2" pad="3"/>
 <contactref element="JP5" pad="2"/>
@@ -4346,7 +4346,7 @@ design rules under a new name.</description>
 <wire x1="6.1722" y1="52.1208" x2="6.35" y2="52.07" width="0.254" layer="1"/>
 <via x="5.4864" y="66.0654" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$19">
+<signal name="SCL">
 <contactref element="IC1" pad="2"/>
 <contactref element="MC1" pad="P$10"/>
 <wire x1="13.9446" y1="11.2014" x2="13.9446" y2="6.4008" width="0.254" layer="1"/>
@@ -4370,7 +4370,7 @@ design rules under a new name.</description>
 <via x="5.4864" y="24.2316" extent="1-16" drill="0.6096"/>
 <via x="13.9446" y="50.292" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$23">
+<signal name="SDA">
 <contactref element="MC1" pad="P$11"/>
 <contactref element="IC1" pad="12"/>
 <wire x1="22.1742" y1="14.1732" x2="21.717" y2="14.1732" width="0.254" layer="16"/>
@@ -4417,7 +4417,7 @@ design rules under a new name.</description>
 <via x="49.8348" y="17.6022" extent="1-16" drill="0.6096"/>
 <via x="59.6646" y="36.576" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$24">
+<signal name="PD">
 <contactref element="X1" pad="5"/>
 <contactref element="JP6" pad="1"/>
 <contactref element="R1" pad="2"/>
@@ -4458,7 +4458,7 @@ design rules under a new name.</description>
 <via x="44.1198" y="40.4622" extent="1-16" drill="0.6096"/>
 <via x="23.0886" y="42.9768" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$25">
+<signal name="USBD-">
 <contactref element="X1" pad="4"/>
 <contactref element="JP6" pad="2"/>
 <contactref element="JP3" pad="4"/>
@@ -4493,7 +4493,7 @@ design rules under a new name.</description>
 <via x="67.2084" y="47.7774" extent="1-16" drill="0.6096"/>
 <via x="61.9506" y="31.0896" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$26">
+<signal name="USBD+">
 <contactref element="X1" pad="3"/>
 <contactref element="JP6" pad="3"/>
 <contactref element="JP3" pad="3"/>
@@ -4533,7 +4533,7 @@ design rules under a new name.</description>
 <via x="50.292" y="58.9788" extent="1-16" drill="0.6096"/>
 <via x="54.864" y="52.1208" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$27">
+<signal name="CD">
 <contactref element="X1" pad="6"/>
 <contactref element="JP3" pad="6"/>
 <contactref element="MC1" pad="P$7"/>
@@ -4669,7 +4669,7 @@ design rules under a new name.</description>
 <wire x1="31.7754" y1="16.6878" x2="31.75" y2="16.51" width="0.254" layer="16"/>
 <wire x1="41.8338" y1="31.5468" x2="41.91" y2="31.75" width="0.254" layer="16"/>
 </signal>
-<signal name="N$5">
+<signal name="RXA">
 <contactref element="R7" pad="2"/>
 <contactref element="SV1" pad="9"/>
 <wire x1="12.573" y1="19.2024" x2="13.9446" y2="19.2024" width="0.254" layer="1"/>
@@ -4677,7 +4677,7 @@ design rules under a new name.</description>
 <wire x1="13.9446" y1="19.2024" x2="13.97" y2="19.05" width="0.254" layer="1"/>
 <wire x1="6.4008" y1="25.3746" x2="6.35" y2="25.4" width="0.254" layer="1"/>
 </signal>
-<signal name="N$7">
+<signal name="RX">
 <contactref element="S1" pad="2"/>
 <contactref element="MC1" pad="P$14"/>
 <wire x1="24.4602" y1="21.9456" x2="21.717" y2="19.2024" width="0.254" layer="16"/>
@@ -4711,7 +4711,7 @@ design rules under a new name.</description>
 <via x="48.006" y="31.7754" extent="1-16" drill="0.6096"/>
 <via x="39.5478" y="47.7774" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$13">
+<signal name="SCLK">
 <contactref element="MC1" pad="P$18"/>
 <contactref element="JP5" pad="6"/>
 <wire x1="7.3152" y1="11.43" x2="6.35" y2="11.43" width="0.254" layer="16"/>
@@ -4739,7 +4739,7 @@ design rules under a new name.</description>
 <via x="24.4602" y="26.7462" extent="1-16" drill="0.6096"/>
 <via x="35.2044" y="33.8328" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$33">
+<signal name="MISO">
 <contactref element="MC1" pad="P$19"/>
 <contactref element="JP5" pad="4"/>
 <wire x1="7.5438" y1="8.6868" x2="6.4008" y2="8.6868" width="0.254" layer="16"/>
@@ -4767,7 +4767,7 @@ design rules under a new name.</description>
 <via x="36.576" y="26.289" extent="1-16" drill="0.6096"/>
 <via x="42.9768" y="28.1178" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$11">
+<signal name="MOSI">
 <contactref element="JP5" pad="5"/>
 <contactref element="MC1" pad="P$17"/>
 <wire x1="12.3444" y1="11.43" x2="8.89" y2="11.43" width="0.254" layer="16"/>
@@ -4796,7 +4796,7 @@ design rules under a new name.</description>
 <via x="69.9516" y="21.2598" extent="1-16" drill="0.6096"/>
 <via x="69.4944" y="48.9204" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$34">
+<signal name="RELAY">
 <contactref element="R5" pad="1"/>
 <contactref element="MC1" pad="P$9"/>
 <wire x1="39.3192" y1="14.1732" x2="37.0332" y2="16.4592" width="0.254" layer="16"/>
@@ -4812,7 +4812,7 @@ design rules under a new name.</description>
 <via x="46.863" y="32.4612" extent="1-16" drill="0.6096"/>
 <via x="38.1762" y="47.7774" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$9">
+<signal name="GPIO2">
 <contactref element="MC1" pad="P$1"/>
 <contactref element="JP5" pad="3"/>
 <wire x1="8.6868" y1="10.0584" x2="8.6868" y2="8.9154" width="0.254" layer="1"/>
@@ -4828,7 +4828,7 @@ design rules under a new name.</description>
 <wire x1="8.6868" y1="8.9154" x2="8.89" y2="8.89" width="0.254" layer="1"/>
 <wire x1="3.6576" y1="51.8922" x2="3.81" y2="52.07" width="0.254" layer="1"/>
 </signal>
-<signal name="N$22">
+<signal name="SX">
 <contactref element="JP4" pad="1"/>
 <contactref element="MC1" pad="P$3"/>
 <wire x1="8.6868" y1="34.0614" x2="6.4008" y2="31.7754" width="0.254" layer="16"/>
@@ -4860,7 +4860,7 @@ design rules under a new name.</description>
 <wire x1="8.9154" y1="51.8922" x2="8.89" y2="52.07" width="0.254" layer="1"/>
 <via x="30.861" y="33.6042" extent="1-16" drill="0.6096"/>
 </signal>
-<signal name="N$30">
+<signal name="SY">
 <contactref element="JP4" pad="2"/>
 <contactref element="MC1" pad="P$4"/>
 <wire x1="6.858" y1="29.718" x2="8.89" y2="31.75" width="0.254" layer="16"/>
