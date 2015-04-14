@@ -2,53 +2,36 @@
 
 ## Interface
 
-| Panel/Port      | Pin       | Signal                       | Int. Bus            | Int. Port    | Micro Pin    |
-| --------------- | --------  | ---------------------------- | ------------------- | ------------ | ------------ |
-| **Power**       | P1        | Power (7V to 12V)            | (VDD)               | F1           |              |
-|                 | P2        | GND                          | (GND)               | F2-22        |              |
-| **Panel**       | LED       |                              | GEEK19              | F3           | D13~         |
-|                 | Reset     |                              | GEEK20              | F5           |              |
-| **XMIDI OUT**   | M1        | TX+                          | MIDI1               | B1           |              |
-|                 | M2        | GND                          | (GND)               | B2           |              |
-|                 | M3        | TX-                          | MIDI3               | B3           |              |
-|                 | M4        | MIDI OUT SRC                 | MIDI4               | B4           |              |
-|                 | M5        | MIDI OUT SNK                 | MIDI5               | B5           |              |
-|                 | --        | TX                           | MIDI6               | B6           | D1           |
-| **MIDI OUT 2**  | M6        | NC                           | (NC)                | --           |              |
-|                 | M7        | GND                          | (GND)               | B7           |              |
-|                 | M8        | NC                           | (NC)                | --           |              |
-|                 | M9        | MIDI OUT 2 SRC               | MIDI9               | B9           |              |
-|                 | M10       | MIDI OUT 2 SNK               | MIDI10              | B10          |              |
-| **XMIDI IN**    | m1        | RX+                          | MIDI11              | B11          |              |
-|                 | m2        | NC/GND                       | (GND)               | B12          |              |
-|                 | m3        | RX-                          | MIDI13              | B13          |              |
-|                 | m4        | MIDI IN SRC                  | MIDI14              | B14          | D12A11pd     |
-|                 | m5        | MIDI IN SNK                  | MIDI15              | B15          |              |
-|                 | --        | RX                           | MIDI16              | --           | D0           |
-| **GeekPort II** | G1        | Power (7V to 12V)            | (VDD)               | F7           |              |
-|                 | G2        | GND (1A max)                 | (GND)               | F2-22, U5    |              |
-|                 | G3        | USB D+ OR Sensor X           | GEEK3/UNFD3         | F23, U3      | D10~A10      |
-|                 | G4        | USB D- OR Sensor Y           | GEEK4/UNFD4         | F24, U2      | D9~A9        |
-|                 | G5        | USB Power OR Sensor Z        | GEEK5/GEEK15/UNFD5  | F25, U1      | D4A6pd/D8A8  |
-|                 | G6        | Sensor Detector              | GEEK6               | F26          | D6~A7        |
-|                 | G7        | Vcc (5V)                     | (VCC)               | F9           |              |
-|                 | G8        | Sensor A                     | GEEK8               | F11          | A0           |
-|                 | G9        | Sensor B                     | GEEK9               | F13          | A1           |
-|                 | G10       | Sensor C                     | GEEK10              | F15          | A2           |
-|                 | G11       | Sensor D                     | GEEK11              | F17          | A3           |
-|                 | G12       | I2C SDA OR Sensor E          | GEEK12/GEEK22/UNFD12| F19          | D2INT/A4     |
-|                 | G13       | I2C SCL OR Sensor F          | GEEK13/GEEK23/UNFD13| F21          | D3~INT/A5    |
-|                 | G14       | GND (1A max)                 | (GND)               | F2-22        |              |
-| **Internal**    |           | MIDI IN Selector             | MIDI17              |              | D11~         |
-|                 |           | I2C/Sensor Selector          | GEEK16              |              | D5~          |
-|                 |           | USB Power/Sensor Selector    | GEEK17              |              | D7           |
-|                 |           | 3.3V Out                     | GEEK18              |              |              |
-
-
-analog: 10
-pwm: 4
-
-
+| Panel/Port      | Pin | Signal              | Int. Port | Micro Pin        |
+| --------------- | --- | ------------------- | --------- | ---------------- |
+| **Power**       | P1  | Power (7V to 12V)   | F01, F03  | Vin              |
+|                 | P2  | GND                 | F02, F04  | GND              |
+| **Panel**       | LED | Main LED            | F07-F08   | D13PWM-(R-GND)   |
+|                 | RST | Reset               | F05-F06   | RST-GND          |
+| **GeekPort II** | G01 | Vin                 |           | Vin              |
+|                 | G02 | GND                 | U5        | GND              |
+|                 | G03 | USB D+ or Sensor X  | U3        | U3 or D10PWM/A10 |
+|                 | G04 | USB D- or Sensor Y  | U2        | U2 or D9PWM/A9   |
+|                 | G05 | USB Power           | U1        | U1 and D8/A8     |
+|                 | G06 | Cable detector      |           | D6PWM/A7         |
+|                 | G07 | Vcc                 |           | Vcc              |
+|                 | G08 | Sensor A            |           | A0               |
+|                 | G09 | Sensor B            |           | A1               |
+|                 | G10 | Sensor C            |           | A2               |
+|                 | G11 | Sensor D            |           | A3               |
+|                 | G12 | I2C SDA or Sensor E |           | D2INT or A4      |
+|                 | G13 | I2C SCL or Sensor F |           | D3INTPWM or A5   |
+|                 | G14 | GND                 |           | GND              |
+| **MIDI OUT+**   | X1  | MIDI OUT+ Power     | B01       | Vcc              |
+|                 | X2  | MIDI OUT+ GND       | B02       | GND              |
+|                 | X3  | MIDI OUT+ Raw TX    | B03       | TX + Buffer      |
+|                 | X4  | MIDI OUT+ Send      | B04       | Vcc + R          |
+|                 | X5  | MIDI OUT+ Return    | B05       | TX + Buffer + R  |
+| **MIDI IN+**    | M1  | MIDI IN+ Contact A  | B06       | D12/A11 + Relay  |
+|                 | M2  | NC                  | B07       | NC               |
+|                 | M3  | MIDI IN+ Contact B  | B08       | --               |
+|                 | M4  | MIDI IN+ Anode      | B09       | --               |
+|                 | M5  | MIDI IN+ Kathode    | B10       | Optocoupler + RX |
 
 Obsolete
 
