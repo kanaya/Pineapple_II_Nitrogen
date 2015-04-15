@@ -27,11 +27,18 @@
 |                 | X3  | MIDI OUT+ Raw TX    | B03       | TX + Buffer      |
 |                 | X4  | MIDI OUT+ Send      | B04       | Vcc + R          |
 |                 | X5  | MIDI OUT+ Return    | B05       | TX + Buffer + R  |
-| **MIDI IN+**    | M1  | MIDI IN+ Contact A  | B06       | D12/A11 + Relay  |
+| **MIDI IN+**    | M1  | MIDI IN+ Contact A  | B06       | D4/A6 + Relay    |
 |                 | M2  | NC                  | B07       | NC               |
 |                 | M3  | MIDI IN+ Contact B  | B08       | --               |
 |                 | M4  | MIDI IN+ Anode      | B09       | --               |
 |                 | M5  | MIDI IN+ Kathode    | B10       | Optocoupler + RX |
+| **Selector**    | --  | I2C/Sensor Selector |           | D7               |
+| **GPIO**        | --  | GPIO 0              | D1        | D5~              |
+|                 | --  | GPIO 1              | D2        | D11~             |
+|                 | --  | GPIO 2              | D3        | D12 (A11)        |
+| **SPI**         | --  | SPI MISO            | D4        | MISO             |
+|                 | --  | SPI MOSI            | D5        | MOSI             |
+|                 | --  | SPI SCLK            | D6        | SCLCK            |
 
 Obsolete
 
