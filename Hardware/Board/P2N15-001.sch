@@ -8784,11 +8784,7 @@ Copyright 2015 by Pineapple.cc</text>
 <pinref part="X1" gate="-2" pin="1"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="22.86" y1="182.88" x2="25.4" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="182.88" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-14" pin="1"/>
-<wire x1="25.4" y1="152.4" x2="25.4" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="152.4" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
-<junction x="25.4" y="152.4"/>
+<wire x1="25.4" y1="182.88" x2="25.4" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="182.88" x2="53.34" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="182.88" x2="83.82" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="182.88" x2="127" y2="182.88" width="0.1524" layer="91"/>
@@ -9212,10 +9208,16 @@ Copyright 2015 by Pineapple.cc</text>
 <net name="GPIO1" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="11"/>
-<wire x1="71.12" y1="68.58" x2="142.24" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="68.58" x2="78.74" y2="68.58" width="0.1524" layer="91"/>
 <label x="86.36" y="68.58" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="BLANK"/>
+<wire x1="78.74" y1="68.58" x2="142.24" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="68.58" x2="142.24" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="1"/>
+<wire x1="50.8" y1="106.68" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="106.68" x2="78.74" y2="68.58" width="0.1524" layer="91"/>
+<junction x="78.74" y="68.58"/>
+<label x="78.74" y="83.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="PD" class="0">
@@ -9225,13 +9227,13 @@ Copyright 2015 by Pineapple.cc</text>
 <wire x1="22.86" y1="175.26" x2="33.02" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="175.26" x2="60.96" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="175.26" x2="132.08" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="175.26" x2="33.02" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="175.26" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <junction x="33.02" y="175.26"/>
-<wire x1="33.02" y1="149.86" x2="33.02" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="149.86" x2="81.28" y2="149.86" width="0.1524" layer="91"/>
-<junction x="33.02" y="149.86"/>
-<wire x1="81.28" y1="149.86" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="147.32" x2="33.02" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="147.32" x2="81.28" y2="147.32" width="0.1524" layer="91"/>
+<junction x="33.02" y="147.32"/>
+<wire x1="81.28" y1="147.32" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="MC1" gate="G$1" pin="8"/>
 <wire x1="81.28" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
 <label x="78.74" y="60.96" size="1.778" layer="95"/>
@@ -9269,9 +9271,9 @@ Copyright 2015 by Pineapple.cc</text>
 <segment>
 <pinref part="X1" gate="-6" pin="1"/>
 <wire x1="22.86" y1="172.72" x2="30.48" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="172.72" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="152.4" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="152.4" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="172.72" x2="30.48" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="149.86" x2="83.82" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="149.86" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="MC1" gate="G$1" pin="6"/>
 <wire x1="83.82" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
 <label x="78.74" y="55.88" size="1.778" layer="95"/>
@@ -9355,10 +9357,16 @@ Copyright 2015 by Pineapple.cc</text>
 <net name="GPIO2" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="12"/>
-<wire x1="71.12" y1="71.12" x2="104.14" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
 <label x="86.36" y="71.12" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="XLAT"/>
+<wire x1="76.2" y1="71.12" x2="104.14" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="71.12" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="3"/>
+<wire x1="50.8" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="101.6" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
+<junction x="76.2" y="71.12"/>
+<label x="76.2" y="83.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -9384,18 +9392,6 @@ Copyright 2015 by Pineapple.cc</text>
 <segment>
 <pinref part="MC1" gate="G$1" pin="9"/>
 <wire x1="71.12" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="1"/>
-<wire x1="50.8" y1="106.68" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="106.68" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="JP2" gate="A" pin="3"/>
-<wire x1="50.8" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="101.6" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="MC1" gate="G$1" pin="10"/>
-<wire x1="76.2" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -9412,6 +9408,14 @@ Copyright 2015 by Pineapple.cc</text>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="99.06" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="X1" gate="-14" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="OUT7"/>
+<wire x1="22.86" y1="152.4" x2="124.46" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="152.4" x2="124.46" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
