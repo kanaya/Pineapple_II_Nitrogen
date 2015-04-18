@@ -8583,106 +8583,6 @@ Based on the following sources:
 </deviceset>
 </devicesets>
 </library>
-<library name="con-hirose-dxlm">
-<description>&lt;b&gt;Hirose DXLM connector&lt;/b&gt;
-
-&lt;p&gt;
-Composed by Ichi Kanya. Pineapple.cc.
-&lt;/p&gt;</description>
-<packages>
-<package name="HIROSE-DXLM">
-<description>&lt;b&gt;Hirose DXLM connector&lt;/b&gt;</description>
-<pad name="1" x="3.81" y="9" drill="0.8128"/>
-<pad name="2" x="2.54" y="6" drill="0.8128"/>
-<pad name="3" x="1.27" y="9" drill="0.8128"/>
-<pad name="4" x="0" y="6" drill="0.8128"/>
-<pad name="5" x="-1.27" y="9" drill="0.8128"/>
-<pad name="6" x="-2.54" y="6" drill="0.8128"/>
-<pad name="7" x="-3.81" y="9" drill="0.8128"/>
-<pad name="8" x="3.81" y="3" drill="0.8128"/>
-<pad name="9" x="2.54" y="0" drill="0.8128"/>
-<pad name="10" x="1.27" y="3" drill="0.8128"/>
-<pad name="11" x="0" y="0" drill="0.8128"/>
-<pad name="12" x="-1.27" y="3" drill="0.8128"/>
-<pad name="13" x="-2.54" y="0" drill="0.8128"/>
-<pad name="14" x="-3.81" y="3" drill="0.8128"/>
-<text x="-8.89" y="-2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<hole x="14.5" y="3" drill="2.8"/>
-<hole x="-14.5" y="3" drill="2.8"/>
-<hole x="-14.5" y="8.4" drill="3.2"/>
-<hole x="14.5" y="8.4" drill="3.2"/>
-<wire x1="-18" y1="-5" x2="18" y2="-5" width="0.127" layer="21"/>
-<wire x1="18" y1="-5" x2="18" y2="10" width="0.127" layer="21"/>
-<wire x1="-18" y1="-5" x2="-18" y2="10" width="0.127" layer="21"/>
-<pad name="P$1" x="-7.97" y="0" drill="2.2" shape="octagon"/>
-<pad name="P$2" x="7.97" y="0" drill="2.2" shape="octagon"/>
-<pad name="P$3" x="-7.97" y="6" drill="2.2" shape="octagon"/>
-<pad name="P$4" x="7.97" y="6" drill="2.2" shape="octagon"/>
-</package>
-</packages>
-<symbols>
-<symbol name="PIN-FV">
-<wire x1="1.016" y1="0.254" x2="0" y2="0.254" width="0.254" layer="94"/>
-<wire x1="0" y1="0.254" x2="0" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="0" y1="-0.254" x2="1.016" y2="-0.254" width="0.254" layer="94"/>
-<text x="1.524" y="-0.762" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.27" y="1.27" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-<symbol name="PIN-F">
-<wire x1="1.016" y1="0.254" x2="0" y2="0.254" width="0.254" layer="94"/>
-<wire x1="0" y1="0.254" x2="0" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="0" y1="-0.254" x2="1.016" y2="-0.254" width="0.254" layer="94"/>
-<text x="1.524" y="-0.762" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="HIROSE-DXLM" prefix="X" uservalue="yes">
-<description>&lt;b&gt;Hirose DXLM connector&lt;/b&gt;</description>
-<gates>
-<gate name="-1" symbol="PIN-FV" x="0" y="33.02" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="PIN-F" x="0" y="30.48" addlevel="always" swaplevel="1"/>
-<gate name="-3" symbol="PIN-F" x="0" y="27.94" addlevel="always" swaplevel="1"/>
-<gate name="-4" symbol="PIN-F" x="0" y="25.4" addlevel="always" swaplevel="1"/>
-<gate name="-5" symbol="PIN-F" x="0" y="22.86" addlevel="always" swaplevel="1"/>
-<gate name="-6" symbol="PIN-F" x="0" y="20.32" addlevel="always" swaplevel="1"/>
-<gate name="-7" symbol="PIN-F" x="0" y="17.78" addlevel="always" swaplevel="1"/>
-<gate name="-8" symbol="PIN-F" x="0" y="15.24" addlevel="always" swaplevel="1"/>
-<gate name="-9" symbol="PIN-F" x="0" y="12.7" addlevel="always" swaplevel="1"/>
-<gate name="-10" symbol="PIN-F" x="0" y="10.16" addlevel="always" swaplevel="1"/>
-<gate name="-11" symbol="PIN-F" x="0" y="7.62" addlevel="always" swaplevel="1"/>
-<gate name="-12" symbol="PIN-F" x="0" y="5.08" addlevel="always" swaplevel="1"/>
-<gate name="-13" symbol="PIN-F" x="0" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="-14" symbol="PIN-F" x="0" y="0" addlevel="always" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="HIROSE-DXLM">
-<connects>
-<connect gate="-1" pin="1" pad="1"/>
-<connect gate="-10" pin="1" pad="10"/>
-<connect gate="-11" pin="1" pad="11"/>
-<connect gate="-12" pin="1" pad="12"/>
-<connect gate="-13" pin="1" pad="13"/>
-<connect gate="-14" pin="1" pad="14"/>
-<connect gate="-2" pin="1" pad="2"/>
-<connect gate="-3" pin="1" pad="3"/>
-<connect gate="-4" pin="1" pad="4"/>
-<connect gate="-5" pin="1" pad="5"/>
-<connect gate="-6" pin="1" pad="6"/>
-<connect gate="-7" pin="1" pad="7"/>
-<connect gate="-8" pin="1" pad="8"/>
-<connect gate="-9" pin="1" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="relay">
 <description>&lt;b&gt;Relays&lt;/b&gt;&lt;p&gt;
 &lt;ul&gt;
@@ -9008,6 +8908,131 @@ Mors</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-hirose-dx10lm1-14se">
+<description>&lt;b&gt;PANASONIC Connectors&lt;/b&gt;&lt;p&gt;
+http://www.panasonic-electric-works.ch</description>
+<packages>
+<package name="HIROSE-DX10LM1-14SE">
+<description>&lt;b&gt;AXR30545&lt;/b&gt; Connector&lt;p&gt;
+Source: http://www.panasonic-electric-works.ch/home/www/catalogues/connector/download/en_ds_65201_0000.pdf</description>
+<text x="-17.78" y="10.16" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="10.16" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-6.4" y1="0.25" x2="-6.1" y2="2.05" layer="29"/>
+<rectangle x1="-5.9" y1="0.25" x2="-5.6" y2="2.05" layer="29"/>
+<rectangle x1="-5.4" y1="0.25" x2="-5.1" y2="2.05" layer="29"/>
+<rectangle x1="-4.9" y1="0.25" x2="-4.6" y2="2.05" layer="29"/>
+<rectangle x1="-4.4" y1="0.25" x2="-4.1" y2="2.05" layer="29"/>
+<rectangle x1="-3.9" y1="0.25" x2="-3.6" y2="2.05" layer="29"/>
+<rectangle x1="-3.4" y1="0.25" x2="-3.1" y2="2.05" layer="29"/>
+<rectangle x1="-2.9" y1="0.25" x2="-2.6" y2="2.05" layer="29"/>
+<rectangle x1="-2.4" y1="0.25" x2="-2.1" y2="2.05" layer="29"/>
+<rectangle x1="-1.9" y1="0.25" x2="-1.6" y2="2.05" layer="29"/>
+<rectangle x1="-1.4" y1="0.25" x2="-1.1" y2="2.05" layer="29"/>
+<rectangle x1="-0.9" y1="0.25" x2="-0.6" y2="2.05" layer="29"/>
+<rectangle x1="-0.4" y1="0.25" x2="-0.1" y2="2.05" layer="29"/>
+<rectangle x1="0.1" y1="0.25" x2="0.4" y2="2.05" layer="29"/>
+<rectangle x1="0.6" y1="0.25" x2="0.9" y2="2.05" layer="29"/>
+<rectangle x1="1.1" y1="0.25" x2="1.4" y2="2.05" layer="29"/>
+<rectangle x1="1.6" y1="0.25" x2="1.9" y2="2.05" layer="29"/>
+<rectangle x1="2.1" y1="0.25" x2="2.4" y2="2.05" layer="29"/>
+<rectangle x1="2.6" y1="0.25" x2="2.9" y2="2.05" layer="29"/>
+<rectangle x1="3.1" y1="0.25" x2="3.4" y2="2.05" layer="29"/>
+<rectangle x1="3.6" y1="0.25" x2="3.9" y2="2.05" layer="29"/>
+<rectangle x1="4.1" y1="0.25" x2="4.4" y2="2.05" layer="29"/>
+<rectangle x1="4.6" y1="0.25" x2="4.9" y2="2.05" layer="29"/>
+<rectangle x1="5.1" y1="0.25" x2="5.4" y2="2.05" layer="29"/>
+<rectangle x1="5.6" y1="0.25" x2="5.9" y2="2.05" layer="29"/>
+<rectangle x1="6.1" y1="0.25" x2="6.4" y2="2.05" layer="29"/>
+<pad name="P$1" x="3.81" y="9" drill="0.8" shape="square"/>
+<pad name="P$2" x="2.54" y="6" drill="0.8"/>
+<pad name="P$3" x="1.27" y="9" drill="0.8"/>
+<pad name="P$4" x="0" y="6" drill="0.8"/>
+<pad name="P$5" x="-1.27" y="9" drill="0.8"/>
+<pad name="P$6" x="-2.54" y="6" drill="0.8"/>
+<pad name="P$7" x="-3.81" y="9" drill="0.8"/>
+<pad name="P$8" x="3.81" y="3" drill="0.8"/>
+<pad name="P$9" x="2.54" y="0" drill="0.8"/>
+<pad name="P$10" x="1.27" y="3" drill="0.8"/>
+<pad name="P$11" x="0" y="0" drill="0.8"/>
+<pad name="P$12" x="-1.27" y="3" drill="0.8"/>
+<pad name="P$13" x="-2.54" y="0" drill="0.8"/>
+<pad name="P$14" x="-3.81" y="3" drill="0.8"/>
+<pad name="P$15" x="-7.97" y="0" drill="2.2" shape="octagon"/>
+<pad name="P$16" x="7.97" y="0" drill="2.2" shape="octagon"/>
+<pad name="P$17" x="7.97" y="6" drill="2.2" shape="octagon"/>
+<pad name="P$18" x="-7.97" y="6" drill="2.2" shape="octagon"/>
+<hole x="-14.5" y="3" drill="2.8"/>
+<hole x="14.5" y="3" drill="2.8"/>
+<hole x="-14.5" y="8.4" drill="3.2"/>
+<hole x="14.5" y="8.4" drill="3.2"/>
+<wire x1="-18" y1="-5" x2="18" y2="-5" width="0.127" layer="21"/>
+<wire x1="-18" y1="-5" x2="-18" y2="10" width="0.127" layer="21"/>
+<wire x1="18" y1="-5" x2="18" y2="10" width="0.127" layer="21"/>
+<wire x1="-18" y1="10" x2="18" y2="10" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="HIROSE-DX10LM1-14SE">
+<wire x1="-2.54" y1="33.02" x2="5.08" y2="33.02" width="0.254" layer="94"/>
+<wire x1="5.08" y1="33.02" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="33.02" width="0.254" layer="94"/>
+<text x="-2.54" y="34.29" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="-1" x="-5.08" y="30.48" visible="pin" length="short" direction="in"/>
+<pin name="-2" x="-5.08" y="27.94" visible="pin" length="short" direction="in"/>
+<pin name="-3" x="-5.08" y="25.4" visible="pin" length="short" direction="in"/>
+<pin name="-4" x="-5.08" y="22.86" visible="pin" length="short" direction="in"/>
+<pin name="-5" x="-5.08" y="20.32" visible="pin" length="short" direction="in"/>
+<pin name="-6" x="-5.08" y="17.78" visible="pin" length="short" direction="in"/>
+<pin name="-7" x="-5.08" y="15.24" visible="pin" length="short" direction="in"/>
+<pin name="-8" x="-5.08" y="12.7" visible="pin" length="short" direction="in"/>
+<pin name="-9" x="-5.08" y="10.16" visible="pin" length="short" direction="in"/>
+<pin name="-10" x="-5.08" y="7.62" visible="pin" length="short" direction="in"/>
+<pin name="-11" x="-5.08" y="5.08" visible="pin" length="short" direction="in"/>
+<pin name="-12" x="-5.08" y="2.54" visible="pin" length="short" direction="in"/>
+<pin name="-13" x="-5.08" y="0" visible="pin" length="short" direction="in"/>
+<pin name="-14" x="-5.08" y="-2.54" visible="pin" length="short" direction="in"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="HIROSE-DX10LM1-14SE" prefix="X">
+<description>&lt;b&gt;AXR30545 Plug &lt;/b&gt;(Board mounting type) B type&lt;p&gt;
+Source: http://www.panasonic-electric-works.ch/home/www/catalogues/connector/download/en_ds_65201_0000.pdf</description>
+<gates>
+<gate name="G$1" symbol="HIROSE-DX10LM1-14SE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HIROSE-DX10LM1-14SE">
+<connects>
+<connect gate="G$1" pin="-1" pad="P$1"/>
+<connect gate="G$1" pin="-10" pad="P$10"/>
+<connect gate="G$1" pin="-11" pad="P$11"/>
+<connect gate="G$1" pin="-12" pad="P$12"/>
+<connect gate="G$1" pin="-13" pad="P$13"/>
+<connect gate="G$1" pin="-14" pad="P$14"/>
+<connect gate="G$1" pin="-2" pad="P$2"/>
+<connect gate="G$1" pin="-3" pad="P$3"/>
+<connect gate="G$1" pin="-4" pad="P$4"/>
+<connect gate="G$1" pin="-5" pad="P$5"/>
+<connect gate="G$1" pin="-6" pad="P$6"/>
+<connect gate="G$1" pin="-7" pad="P$7"/>
+<connect gate="G$1" pin="-8" pad="P$8"/>
+<connect gate="G$1" pin="-9" pad="P$9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="AXR30545" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="11N4069" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9069,7 +9094,6 @@ Mors</description>
 <part name="IC1" library="40xx" deviceset="4053" device="N"/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY29" library="supply2" deviceset="GND" device=""/>
-<part name="X1" library="con-hirose-dxlm" deviceset="HIROSE-DXLM" device=""/>
 <part name="VDD1" library="supply1" deviceset="VDD" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-2X4" device=""/>
@@ -9087,6 +9111,7 @@ Mors</description>
 <part name="S1" library="switch-dil" deviceset="DS01E" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="R9" library="resistor" deviceset="R-US_" device="0204/5" value="220"/>
+<part name="X1" library="con-hirose-dx10lm1-14se" deviceset="HIROSE-DX10LM1-14SE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9169,20 +9194,6 @@ Copyright 2015 by Pineapple.cc</text>
 <instance part="IC1" gate="A" x="99.06" y="116.84" rot="MR0"/>
 <instance part="SUPPLY2" gate="GND" x="25.4" y="129.54"/>
 <instance part="SUPPLY29" gate="GND" x="297.18" y="101.6"/>
-<instance part="X1" gate="-1" x="20.32" y="185.42" rot="MR0"/>
-<instance part="X1" gate="-2" x="20.32" y="182.88" rot="MR0"/>
-<instance part="X1" gate="-3" x="20.32" y="180.34" rot="MR0"/>
-<instance part="X1" gate="-4" x="20.32" y="177.8" rot="MR0"/>
-<instance part="X1" gate="-5" x="20.32" y="175.26" rot="MR0"/>
-<instance part="X1" gate="-6" x="20.32" y="172.72" rot="MR0"/>
-<instance part="X1" gate="-7" x="20.32" y="170.18" rot="MR0"/>
-<instance part="X1" gate="-8" x="20.32" y="167.64" rot="MR0"/>
-<instance part="X1" gate="-9" x="20.32" y="165.1" rot="MR0"/>
-<instance part="X1" gate="-10" x="20.32" y="162.56" rot="MR0"/>
-<instance part="X1" gate="-11" x="20.32" y="160.02" rot="MR0"/>
-<instance part="X1" gate="-12" x="20.32" y="157.48" rot="MR0"/>
-<instance part="X1" gate="-13" x="20.32" y="154.94" rot="MR0"/>
-<instance part="X1" gate="-14" x="20.32" y="152.4" rot="MR0"/>
 <instance part="VDD1" gate="G$1" x="7.62" y="114.3"/>
 <instance part="SUPPLY5" gate="GND" x="40.64" y="93.98"/>
 <instance part="JP1" gate="A" x="17.78" y="101.6"/>
@@ -9201,6 +9212,7 @@ Copyright 2015 by Pineapple.cc</text>
 <instance part="S1" gate="1" x="83.82" y="15.24" rot="R270"/>
 <instance part="SUPPLY8" gate="GND" x="91.44" y="7.62"/>
 <instance part="R9" gate="G$1" x="228.6" y="104.14"/>
+<instance part="X1" gate="G$1" x="17.78" y="154.94" rot="MR0"/>
 </instances>
 <busses>
 <bus name="ANLG[0..5]">
@@ -9322,11 +9334,9 @@ Copyright 2015 by Pineapple.cc</text>
 <junction x="114.3" y="114.3"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-2" pin="1"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="22.86" y1="182.88" x2="25.4" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="182.88" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-14" pin="1"/>
 <wire x1="25.4" y1="152.4" x2="25.4" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="152.4" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
 <junction x="25.4" y="152.4"/>
@@ -9343,6 +9353,8 @@ Copyright 2015 by Pineapple.cc</text>
 <pinref part="JP3" gate="A" pin="14"/>
 <wire x1="83.82" y1="193.04" x2="83.82" y2="182.88" width="0.1524" layer="91"/>
 <junction x="83.82" y="182.88"/>
+<pinref part="X1" gate="G$1" pin="-2"/>
+<pinref part="X1" gate="G$1" pin="-14"/>
 </segment>
 <segment>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
@@ -9462,13 +9474,13 @@ Copyright 2015 by Pineapple.cc</text>
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
 <wire x1="27.94" y1="190.5" x2="27.94" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-7" pin="1"/>
 <wire x1="27.94" y1="187.96" x2="27.94" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="170.18" x2="22.86" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="A" pin="7"/>
 <wire x1="27.94" y1="187.96" x2="66.04" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="187.96" x2="66.04" y2="193.04" width="0.1524" layer="91"/>
 <junction x="27.94" y="187.96"/>
+<pinref part="X1" gate="G$1" pin="-7"/>
 </segment>
 <segment>
 <pinref part="SUPPLY21" gate="G$1" pin="VCC"/>
@@ -9527,7 +9539,6 @@ Copyright 2015 by Pineapple.cc</text>
 <pinref part="VDD2" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-1" pin="1"/>
 <pinref part="VDD3" gate="G$1" pin="VDD"/>
 <wire x1="22.86" y1="185.42" x2="25.4" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="185.42" x2="25.4" y2="187.96" width="0.1524" layer="91"/>
@@ -9535,6 +9546,7 @@ Copyright 2015 by Pineapple.cc</text>
 <wire x1="25.4" y1="185.42" x2="50.8" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="185.42" x2="50.8" y2="193.04" width="0.1524" layer="91"/>
 <junction x="25.4" y="185.42"/>
+<pinref part="X1" gate="G$1" pin="-1"/>
 </segment>
 <segment>
 <pinref part="VDD1" gate="G$1" pin="VDD"/>
@@ -9712,7 +9724,6 @@ Copyright 2015 by Pineapple.cc</text>
 <label x="38.1" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-8" pin="1"/>
 <wire x1="127" y1="165.1" x2="124.46" y2="167.64" width="0.1524" layer="91" curve="90"/>
 <wire x1="124.46" y1="167.64" x2="68.58" y2="167.64" width="0.1524" layer="91"/>
 <label x="111.76" y="167.64" size="1.778" layer="95"/>
@@ -9720,6 +9731,7 @@ Copyright 2015 by Pineapple.cc</text>
 <wire x1="68.58" y1="167.64" x2="22.86" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="193.04" x2="68.58" y2="167.64" width="0.1524" layer="91"/>
 <junction x="68.58" y="167.64"/>
+<pinref part="X1" gate="G$1" pin="-8"/>
 </segment>
 </net>
 <net name="ANLG1" class="0">
@@ -9730,7 +9742,6 @@ Copyright 2015 by Pineapple.cc</text>
 <label x="38.1" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-9" pin="1"/>
 <wire x1="127" y1="162.56" x2="124.46" y2="165.1" width="0.1524" layer="91" curve="90"/>
 <wire x1="124.46" y1="165.1" x2="71.12" y2="165.1" width="0.1524" layer="91"/>
 <label x="111.76" y="165.1" size="1.778" layer="95"/>
@@ -9738,6 +9749,7 @@ Copyright 2015 by Pineapple.cc</text>
 <wire x1="71.12" y1="165.1" x2="22.86" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="193.04" x2="71.12" y2="165.1" width="0.1524" layer="91"/>
 <junction x="71.12" y="165.1"/>
+<pinref part="X1" gate="G$1" pin="-9"/>
 </segment>
 </net>
 <net name="ANLG2" class="0">
@@ -9748,7 +9760,6 @@ Copyright 2015 by Pineapple.cc</text>
 <label x="38.1" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-10" pin="1"/>
 <wire x1="127" y1="160.02" x2="124.46" y2="162.56" width="0.1524" layer="91" curve="90"/>
 <wire x1="124.46" y1="162.56" x2="73.66" y2="162.56" width="0.1524" layer="91"/>
 <label x="111.76" y="162.56" size="1.778" layer="95"/>
@@ -9756,6 +9767,7 @@ Copyright 2015 by Pineapple.cc</text>
 <wire x1="73.66" y1="162.56" x2="22.86" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="193.04" x2="73.66" y2="162.56" width="0.1524" layer="91"/>
 <junction x="73.66" y="162.56"/>
+<pinref part="X1" gate="G$1" pin="-10"/>
 </segment>
 </net>
 <net name="ANLG3" class="0">
@@ -9766,7 +9778,6 @@ Copyright 2015 by Pineapple.cc</text>
 <label x="38.1" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-11" pin="1"/>
 <wire x1="127" y1="157.48" x2="124.46" y2="160.02" width="0.1524" layer="91" curve="90"/>
 <wire x1="124.46" y1="160.02" x2="76.2" y2="160.02" width="0.1524" layer="91"/>
 <label x="111.76" y="160.02" size="1.778" layer="95"/>
@@ -9774,6 +9785,7 @@ Copyright 2015 by Pineapple.cc</text>
 <wire x1="76.2" y1="160.02" x2="22.86" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="193.04" x2="76.2" y2="160.02" width="0.1524" layer="91"/>
 <junction x="76.2" y="160.02"/>
+<pinref part="X1" gate="G$1" pin="-11"/>
 </segment>
 </net>
 <net name="ANLG4" class="0">
@@ -9903,7 +9915,6 @@ Copyright 2015 by Pineapple.cc</text>
 </net>
 <net name="PD" class="0">
 <segment>
-<pinref part="X1" gate="-5" pin="1"/>
 <pinref part="JP6" gate="A" pin="1"/>
 <wire x1="22.86" y1="175.26" x2="33.02" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="175.26" x2="60.96" y2="175.26" width="0.1524" layer="91"/>
@@ -9923,11 +9934,11 @@ Copyright 2015 by Pineapple.cc</text>
 <label x="78.74" y="60.96" size="1.778" layer="95"/>
 <label x="81.28" y="83.82" size="1.778" layer="95" rot="R90"/>
 <junction x="66.04" y="175.26"/>
+<pinref part="X1" gate="G$1" pin="-5"/>
 </segment>
 </net>
 <net name="USBD-" class="0">
 <segment>
-<pinref part="X1" gate="-4" pin="1"/>
 <pinref part="JP6" gate="A" pin="2"/>
 <wire x1="22.86" y1="177.8" x2="58.42" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="A" pin="4"/>
@@ -9935,11 +9946,11 @@ Copyright 2015 by Pineapple.cc</text>
 <wire x1="58.42" y1="193.04" x2="58.42" y2="177.8" width="0.1524" layer="91"/>
 <junction x="58.42" y="177.8"/>
 <label x="111.76" y="177.8" size="1.778" layer="95"/>
+<pinref part="X1" gate="G$1" pin="-4"/>
 </segment>
 </net>
 <net name="USBD+" class="0">
 <segment>
-<pinref part="X1" gate="-3" pin="1"/>
 <pinref part="JP6" gate="A" pin="3"/>
 <wire x1="22.86" y1="180.34" x2="55.88" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="A" pin="3"/>
@@ -9947,11 +9958,11 @@ Copyright 2015 by Pineapple.cc</text>
 <wire x1="55.88" y1="193.04" x2="55.88" y2="180.34" width="0.1524" layer="91"/>
 <junction x="55.88" y="180.34"/>
 <label x="111.76" y="180.34" size="1.778" layer="95"/>
+<pinref part="X1" gate="G$1" pin="-3"/>
 </segment>
 </net>
 <net name="CD" class="0">
 <segment>
-<pinref part="X1" gate="-6" pin="1"/>
 <wire x1="22.86" y1="172.72" x2="30.48" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="172.72" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="152.4" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
@@ -9964,11 +9975,11 @@ Copyright 2015 by Pineapple.cc</text>
 <wire x1="83.82" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
 <label x="78.74" y="55.88" size="1.778" layer="95"/>
 <label x="83.82" y="83.82" size="1.778" layer="95" rot="R90"/>
+<pinref part="X1" gate="G$1" pin="-6"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="X1" gate="-12" pin="1"/>
 <wire x1="22.86" y1="157.48" x2="78.74" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="157.48" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="X"/>
@@ -9976,20 +9987,20 @@ Copyright 2015 by Pineapple.cc</text>
 <pinref part="JP3" gate="A" pin="12"/>
 <wire x1="78.74" y1="193.04" x2="78.74" y2="157.48" width="0.1524" layer="91"/>
 <junction x="78.74" y="157.48"/>
+<pinref part="X1" gate="G$1" pin="-12"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="X1" gate="-13" pin="1"/>
 <wire x1="22.86" y1="154.94" x2="76.2" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="154.94" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="Y"/>
 <wire x1="76.2" y1="124.46" x2="86.36" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="154.94" x2="81.28" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="154.94" x2="81.28" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="154.94" x2="81.28" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="A" pin="13"/>
 <junction x="76.2" y="154.94"/>
-<wire x1="81.28" y1="175.26" x2="81.28" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="-13"/>
 </segment>
 </net>
 <net name="N$17" class="0">
