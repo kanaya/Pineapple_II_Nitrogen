@@ -9080,7 +9080,7 @@ Source: http://www.panasonic-electric-works.ch/home/www/catalogues/connector/dow
 <part name="VDD2" library="supply1" deviceset="VDD" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="VDD3" library="supply1" deviceset="VDD" device=""/>
-<part name="R2" library="resistor" deviceset="R-US_" device="0204/5" value="220"/>
+<part name="R2" library="resistor" deviceset="R-US_" device="0204/5" value="150"/>
 <part name="SV1" library="con-ml" deviceset="ML10L" device=""/>
 <part name="JP6" library="pinhead" deviceset="PINHD-1X5" device="/90"/>
 <part name="R1" library="resistor" deviceset="R-US_" device="0204/5" value="10k"/>

@@ -3329,7 +3329,7 @@ design rules under a new name.</description>
 <element name="R4" library="resistor" package="0204/5" value="120" x="34.29" y="19.05" rot="R90"/>
 <element name="R5" library="resistor" package="0204/5" value="220" x="11.43" y="19.05"/>
 <element name="MC1" library="adafruit" package="ARDUINOMICRO" value="ARDUINOMICRO" x="24.13" y="44.45"/>
-<element name="R2" library="resistor" package="0204/5" value="220" x="31.75" y="19.05" rot="R90"/>
+<element name="R2" library="resistor" package="0204/5" value="150" x="31.75" y="19.05" rot="R90"/>
 <element name="SV1" library="con-ml" package="ML10L" value="" x="5.08" y="19.05" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="5.08" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="5.08" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
