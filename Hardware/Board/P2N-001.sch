@@ -10563,17 +10563,6 @@ Copyright 2015 by Pineapple.cc</text>
 <label x="88.9" y="78.74" size="1.778" layer="95"/>
 </segment>
 </bus>
-<bus name="SENS[0..1]">
-<segment>
-<wire x1="104.14" y1="63.5" x2="104.14" y2="68.58" width="0.762" layer="92"/>
-<wire x1="104.14" y1="68.58" x2="106.68" y2="71.12" width="0.762" layer="92" curve="-90"/>
-<wire x1="106.68" y1="71.12" x2="124.46" y2="71.12" width="0.762" layer="92"/>
-<wire x1="124.46" y1="71.12" x2="127" y2="73.66" width="0.762" layer="92" curve="90"/>
-<wire x1="127" y1="73.66" x2="127" y2="142.24" width="0.762" layer="92"/>
-<wire x1="127" y1="142.24" x2="129.54" y2="144.78" width="0.762" layer="92" curve="-90"/>
-<wire x1="129.54" y1="144.78" x2="307.34" y2="144.78" width="0.762" layer="92"/>
-</segment>
-</bus>
 </busses>
 <nets>
 <net name="GND" class="0">
@@ -11166,7 +11155,7 @@ Copyright 2015 by Pineapple.cc</text>
 <label x="111.76" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TXRETURNII" class="0">
+<net name="TX2RETURN" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="254" y1="60.96" x2="274.32" y2="60.96" width="0.1524" layer="91"/>
@@ -11176,7 +11165,7 @@ Copyright 2015 by Pineapple.cc</text>
 <label x="261.62" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TXSENDZV" class="0">
+<net name="TX2SEND" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="71.12" x2="302.26" y2="71.12" width="0.1524" layer="91"/>
@@ -11462,22 +11451,6 @@ Copyright 2015 by Pineapple.cc</text>
 <pinref part="IC3" gate="C" pin="O"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="83.82" x2="154.94" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="SENS0" class="0">
-<segment>
-<pinref part="MC1" gate="G$1" pin="10"/>
-<wire x1="104.14" y1="68.58" x2="101.6" y2="66.04" width="0.1524" layer="91" curve="-90"/>
-<wire x1="101.6" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
-<label x="86.36" y="66.04" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SENS1" class="0">
-<segment>
-<pinref part="MC1" gate="G$1" pin="9"/>
-<wire x1="104.14" y1="66.04" x2="101.6" y2="63.5" width="0.1524" layer="91" curve="-90"/>
-<wire x1="101.6" y1="63.5" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
-<label x="86.36" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RXSEND" class="0">
