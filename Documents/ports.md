@@ -48,13 +48,13 @@ DIN 5-pin
 
 #### Pinout
 
-| Pin num. | Function     |
-| -------- | ------------ |
-| 1        | ZV Contact A |
-| 2        | GND          |
-| 3        | ZV Contact B |
-| 4        | Send         |
-| 5        | Return       |
+| Pin num. | Function        |
+| -------- | --------------- |
+| 1        | ZV Contact A    |
+| 2        | GND             |
+| 3        | ZV Contact B    |
+| 4        | MIDI OUT Send   |
+| 5        | MIDI OUT Return |
 
 ### MIDI+ IN
 
@@ -64,13 +64,13 @@ DIN 5-pin
 
 #### Pinout
 
-| Pin num. | Function  |
-| -------- | --------- |
-| 1        | Vcc       |
-| 2        | GND       |
-| 3        | Raw TX OC |
-| 4        | Anode     |
-| 5        | Kathode   |
+| Pin num. | Function        |
+| -------- | --------------- |
+| 1        | Vcc             |
+| 2        | GND             |
+| 3        | Raw TX OC       |
+| 4        | MIDI IN Anode   |
+| 5        | MIDI IN Kathode |
 
 ### HydroPort
 
@@ -80,14 +80,14 @@ HR-10A 6p
 
 #### Pinout
 
-| Pin num. | Function     |
-| -------- | ------------ |
-| 1        | Vcc          |
-| 2        | GND          |
-| 3        | Cable detect |
-| 4        | Sensor A     |
-| 5        | I2C SDA      |
-| 6        | I2C SCL      |
+| Pin num. | Function     | Corresponding GeekPort II Pin |
+| -------- | ------------ | ----------------------------- |
+| 1        | Vcc          | Vcc                           |
+| 2        | GND          | GND                           |
+| 3        | Cable Detect | Cable Detect                  |
+| 4        | Sensor A     | Sensor A                      |
+| 5        | I2C SDA      | I2S SDA                       |
+| 6        | I2C SCL      | I2C SCL                       |
 
 ### ZeroVoltagePort
 
@@ -97,12 +97,12 @@ HR-10A 4p
 
 #### Pinout
 
-| Pin num. | Function     |
-| -------- | ------------ |
-| 1        | Vcc R220     |
-| 2        | GND          |
-| 3        | ZV Contact A |
-| 4        | ZV Contact B |
+| Pin num. | Function     | Corresponding MIDI+ OUT |
+| -------- | ------------ | ----------------------- |
+| 1        | Vcc R220     | MIDI OUT Send           |
+| 2        | GND          | GND                     |
+| 3        | ZV Contact A | ZV Contact A            |
+| 4        | ZV Contact B | ZV Contact B            |
 
 ## Internal Ports
 
