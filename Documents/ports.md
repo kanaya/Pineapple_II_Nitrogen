@@ -40,7 +40,7 @@ Half-pitch 14-pin Amphenol Connector
 | 13       | I2C SCL      | Drive 6      |
 | 14       | GND          | Drive 7      |
 
-### MIDI+ OUT
+### XMIDI OutThru
 
 #### Type
 
@@ -48,15 +48,15 @@ DIN 5-pin
 
 #### Pinout
 
-| Pin num. | Function        |
-| -------- | --------------- |
-| 1        | ZV Contact A    |
-| 2        | GND             |
-| 3        | ZV Contact B    |
-| 4        | MIDI OUT Send   |
-| 5        | MIDI OUT Return |
+| Pin num. | Function (1)     | Function (2)  |
+| -------- | ---------------- | ------------- |
+| 1        | MIDI THRU Send   | ZV Contact A  |
+| 2        | GND              | GND           |
+| 3        | MIDI THRU Return | ZV Contact B  |
+| 4        | MIDI OUT Send    | Vcc R220      |
+| 5        | MIDI OUT Return  | NC            |
 
-### MIDI+ IN
+### XMIDI InOut
 
 #### Type
 
@@ -64,13 +64,13 @@ DIN 5-pin
 
 #### Pinout
 
-| Pin num. | Function        |
-| -------- | --------------- |
-| 1        | Vcc             |
-| 2        | GND             |
-| 3        | Raw TX OC       |
-| 4        | MIDI IN Anode   |
-| 5        | MIDI IN Kathode |
+| Pin num. | Function          |
+| -------- | ----------------- |
+| 1        | MIDI OUT 2 Send   |
+| 2        | GND               |
+| 3        | MIDI OUT 2 Return |
+| 4        | MIDI IN Anode     |
+| 5        | MIDI IN Kathode   |
 
 ### HydroPort
 
@@ -106,7 +106,7 @@ HR-10A 4p
 
 ## Internal Ports
 
-### XMIDI
+### COM
 
 #### Type
 
