@@ -48,13 +48,13 @@ DIN 5-pin
 
 #### Pinout
 
-| Pin num. | Function (1)     | Function (2)  |
-| -------- | ---------------- | ------------- |
-| 1        | MIDI THRU Send   | ZV Contact A  |
-| 2        | GND              | GND           |
-| 3        | MIDI THRU Return | ZV Contact B  |
-| 4        | MIDI OUT Send    | Vcc R220      |
-| 5        | MIDI OUT Return  | NC            |
+| Pin num. | Function         |
+| -------- | ---------------- |
+| 1        | MIDI THRU Send   |
+| 2        | GND              |
+| 3        | MIDI THRU Return |
+| 4        | MIDI OUT Send    |
+| 5        | MIDI OUT Return  |
 
 ### XMIDI InOut
 
@@ -97,12 +97,12 @@ HR-10A 4p
 
 #### Pinout
 
-| Pin num. | Function     | Corresponding MIDI+ OUT |
-| -------- | ------------ | ----------------------- |
-| 1        | Vcc R220     | MIDI OUT Send           |
-| 2        | GND          | GND                     |
-| 3        | ZV Contact A | ZV Contact A            |
-| 4        | ZV Contact B | ZV Contact B            |
+| Pin num. | Function     |
+| -------- | ------------ |
+| 1        | Vcc R220     |
+| 2        | GND          |
+| 3        | ZV Contact A |
+| 4        | ZV Contact B |
 
 ## Internal Ports
 
@@ -176,25 +176,21 @@ JST PH connector (2mm-pitch)
 
 #### Type
 
-14-pin Harting (MIL) connector
+10-pin Harting (MIL) connector
 
 #### Pinout
 
-| Pin num. | Function         |
-| -------- | ---------------- |
-| 1        | ZV Contact A     |
-| 2        | GND              |
-| 3        | ZV Contact B     |
-| 4        | MIDI OUT Send    |
-| 5        | MIDI OUT Return  |
-| 6        | Vcc              |
-| 7        | GND              |
-| 8        | Raw TX OC        |
-| 9        | MIDI IN Anode    |
-| 10       | MIDI IN Kathode  |
-| 11       | MIDI THRU Send   |
-| 12       | MIDI THRU Return |
-| 13       | Sensor X         |
-| 14       | Sensor Y         |
+| Pin num. | Function                              |
+| -------- | ------------------------------------- |
+| 1        | XMIDI OutThru RX Send (THRU Send)     |
+| 2        | GND                                   |
+| 3        | XMIDI OutThru RX Return (THRU Return) |
+| 4        | XMIDI OutThru TX Send (OUT Send)      |
+| 5        | XMIDI OutThru TX Return (OUT Return)  |
+| 6        | XMIDI InOut TX Send (OUT2 Send)       |
+| 7        | GND                                   |
+| 8        | XMIDI InOut TX Return (OUT2 Return)   |
+| 9        | XMIDI InOut RX Anode (IN Anode)       |
+| 10       | XMIDI InOut RX Kathode (IN Kathode)   |
 
 
