@@ -2,7 +2,7 @@
 
 ## External Ports
 
-### Power
+### Power Port
 
 #### Type
 
@@ -23,40 +23,24 @@ Half-pitch 14-pin Amphenol Connector
 
 #### Pinout
 
-| Pin num. | Function     |
-| -------- | ------------ |
-| 1        | V+           |
-| 2        | GND          |
-| 3        | USB D+       |
-| 4        | USB D-       |
-| 5        | USB Power    |
-| 6        | Cable detect |
-| 7        | Vcc          |
-| 8        | Sensor A     |
-| 9        | Sensor B     |
-| 10       | Sensor C     |
-| 11       | Sensor D     |
-| 12       | I2C SDA      |
-| 13       | I2C SCL      |
-| 14       | GND          |
+| Pin num. | Function (1) | Function (2) |
+| -------- | ------------ | ------------ |
+| 1        | V+           | V+           |
+| 2        | GND          | GND          |
+| 3        | USB D+       | USB D+       |
+| 4        | USB D-       | USB D-       |
+| 5        | USB Power    | USB Power    |
+| 6        | Cable detect | Cable detect |
+| 7        | Vcc          | Drive 0      |
+| 8        | Sensor A     | Drive 1      |
+| 9        | Sensor B     | Drive 2      |
+| 10       | Sensor C     | Drive 3      |
+| 11       | Sensor D     | Drive 4      |
+| 12       | I2C SDA      | Drive 5      |
+| 13       | I2C SCL      | Drive 6      |
+| 14       | GND          | Drive 7      |
 
-### MIDI OUT+
-
-#### Type
-
-DIN 5-pin
-
-#### Pinout
-
-| Pin num. | Function |
-| -------- | -------- |
-| 1        | Vcc      |
-| 2        | GND      |
-| 3        | Raw TX   |
-| 4        | Send     |
-| 5        | Return   |
-
-### MIDI IN+
+### XMIDI OutThru
 
 #### Type
 
@@ -64,45 +48,65 @@ DIN 5-pin
 
 #### Pinout
 
-| Pin num. | Function  |
-| -------- | --------- |
-| 1        | Contact A |
-| 2        | NC        |
-| 3        | Contact B |
-| 4        | Anode     |
-| 5        | Kathode   |
+| Pin num. | Function         |
+| -------- | ---------------- |
+| 1        | MIDI THRU Send   |
+| 2        | GND              |
+| 3        | MIDI THRU Return |
+| 4        | MIDI OUT Send    |
+| 5        | MIDI OUT Return  |
 
-### Sensor Port
+### XMIDI InOut
 
 #### Type
 
-Mini DIN 4-pin
+DIN 5-pin
+
+#### Pinout
+
+| Pin num. | Function          |
+| -------- | ----------------- |
+| 1        | MIDI OUT 2 Send   |
+| 2        | GND               |
+| 3        | MIDI OUT 2 Return |
+| 4        | MIDI IN Anode     |
+| 5        | MIDI IN Kathode   |
+
+### HydroPort
+
+#### Type
+
+HR-10A 6p
+
+#### Pinout
+
+| Pin num. | Function     | Corresponding GeekPort II Pin |
+| -------- | ------------ | ----------------------------- |
+| 1        | Vcc          | Vcc                           |
+| 2        | GND          | GND                           |
+| 3        | Cable Detect | Cable Detect                  |
+| 4        | Sensor A     | Sensor A                      |
+| 5        | I2C SDA      | I2S SDA                       |
+| 6        | I2C SCL      | I2C SCL                       |
+
+### ZeroVoltagePort
+
+#### Type
+
+HR-10A 4p
 
 #### Pinout
 
 | Pin num. | Function     |
 | -------- | ------------ |
-| 1        | Vcc          |
+| 1        | Vcc R220     |
 | 2        | GND          |
-| 3        | Sensor A     |
-| 4        | Cable detect |
-
-### Relay Port
-
-#### Type
-
-Mini phone jack.
-
-#### Pinout
-
-| Pin num. | Function  |
-| -------- | --------- |
-| 1        | Contact A |
-| 2        | Contact B |
+| 3        | ZV Contact A |
+| 4        | ZV Contact B |
 
 ## Internal Ports
 
-### XMIDI
+### COM
 
 #### Type
 
@@ -117,7 +121,7 @@ JST PH connector (2mm-pitch)
 | 3        | RX+      |
 | 4        | RX-      |
 
-### Driver
+### Actuator Port
 
 #### Type
 
@@ -134,7 +138,7 @@ JST PH connector (2mm-pitch)
 | 5        | SPI MOSI |
 | 6        | SPI SLCK |
 
-### LED
+### LED Port
 
 #### Type
 
@@ -149,21 +153,7 @@ JST PH connector (2mm-pitch)
 | 3        | RXA (GPIO1) |
 | 4        | RXK         |
 
-### Sensor XY
-
-#### Type
-
-1x2 Pinheader
-
-#### Pinout
-
-| Pin num. | Function |
-| -------- | -------- |
-| 1        | Sensor X |
-| 2        | Sensor Y |
-
-
-### Front
+### Front Port
 
 #### Type
 
@@ -182,7 +172,7 @@ JST PH connector (2mm-pitch)
 | 7        | LEDA     |
 | 8        | LEDK     |
 
-### Back
+### Back Port
 
 #### Type
 
@@ -190,17 +180,17 @@ JST PH connector (2mm-pitch)
 
 #### Pinout
 
-| Pin num. | Function        |
-| -------- | --------------- |
-| 1        | Vcc             |
-| 2        | GND             |
-| 3        | Raw TX          |
-| 4        | MIDI OUT Send   |
-| 5        | MIDI OUT Return |
-| 6        | Contact A       |
-| 7        | GND             |
-| 8        | Contact B       |
-| 9        | MIDI IN Anode   |
-| 10       | MIDI IN Kathode |
+| Pin num. | Function                              |
+| -------- | ------------------------------------- |
+| 1        | XMIDI OutThru RX Send (THRU Send)     |
+| 2        | GND                                   |
+| 3        | XMIDI OutThru RX Return (THRU Return) |
+| 4        | XMIDI OutThru TX Send (OUT Send)      |
+| 5        | XMIDI OutThru TX Return (OUT Return)  |
+| 6        | XMIDI InOut TX Send (OUT2 Send)       |
+| 7        | GND                                   |
+| 8        | XMIDI InOut TX Return (OUT2 Return)   |
+| 9        | XMIDI InOut RX Anode (IN Anode)       |
+| 10       | XMIDI InOut RX Kathode (IN Kathode)   |
 
 
